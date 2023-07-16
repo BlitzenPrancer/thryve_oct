@@ -1,0 +1,33 @@
+Based on a quick look at the filenames and contents, here is what each of the attached notebooks is doing:
+
+**Date Format Conversion.ipynb:**
+
+- Reads in a CSV file with a date column in mmddyyyy format
+- Converts the date to a new column in dd/mm/yyyy format using Spark date functions
+- Writes the result out to a CSV file
+
+This shows a simple transformation on a date column.
+
+**De-Duplication.ipynb:**
+
+- Reads a CSV file with duplicate rows 
+- Loads into a Spark DataFrame and de-duplicates it by selecting distinct rows
+- Shows an example of removing duplicate rows
+
+**exercise.ipynb:**
+
+- Reads two input CSV files as DataFrames
+- Joins the DataFrames together on a common key column 
+- Applies some transformations like converting to uppercase
+- Displays and saves the result 
+
+This shows a simple join and transformation pipeline.
+
+**Simple ETL Process.ipynb:**
+
+- Full example of an ETL process - read data, create database/tables, transform data, join tables, save result
+- Covers the main steps like extract, transform, load
+
+Shows end-to-end ETL workflow with Spark.
+
+Overall these demonstrate some common Spark data transformation tasks like cleaning, joining, converting formats etc that are part of ETL pipelines. Let me know if any part needs more explanation!
